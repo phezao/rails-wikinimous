@@ -1,0 +1,7 @@
+<h3>Look at all these awesome articles:</h3>
+<% @articles.each do |article| %>
+  <div class="p-2">
+    <h4><%= link_to article.title, article_path(article)%></h4>
+    <p><%= article.content %></p>
+  </div>
+<% end %>
